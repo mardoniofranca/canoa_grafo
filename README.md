@@ -32,19 +32,6 @@ passo, o caminhante escolhe um vizinho uniformemente ao acaso; se o vizinho
 ainda não foi visitado, a aresta percorrida é adicionada à árvore. O processo
 termina quando todos os $|V|$ vértices tiverem sido incorporados.
 
-### Papel científico
-Serve como **prova de conceito e baseline metodológico**: estabelece que é
-possível construir uma árvore geradora válida (não necessariamente mínima)
-via um processo estocástico simples, e fixa a interface de dados (grafo,
-função de construção, visualização) reutilizada em todo o restante do
-trabalho. Não há reivindicação de otimalidade nesta etapa — o grafo usado
-aqui não é ponderado.
-
-### Observação metodológica importante
-Este método **não gera uma árvore geradora uniforme** (cada árvore possível
-do grafo não tem a mesma probabilidade de ocorrer). Para uma distribuição
-uniforme sobre árvores geradoras seria necessário o algoritmo de Wilson
-(*loop-erased random walk*), não implementado aqui.
 
 ---
 
