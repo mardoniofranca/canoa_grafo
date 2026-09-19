@@ -1,5 +1,6 @@
 # canoa_grafo
-# Quantum Walks em Grafos: Árvores Geradoras Clássicas vs. Quânticas
+# Quantum Walks em Grafos: 
+# Árvores Geradoras Clássicas vs. Quânticas
 
 Este repositório documenta um estudo exploratório comparando a construção de
 árvores geradoras em grafos $G=(V,E)$ por métodos clássicos e por diferentes
