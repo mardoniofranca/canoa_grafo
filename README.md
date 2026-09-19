@@ -3,7 +3,7 @@
 Este repositório documenta um estudo exploratório comparando a construção de
 árvores geradoras em grafos $G=(V,E)$ por métodos clássicos e por diferentes
 formalismos de **passeios quânticos (quantum walks)**. O objetivo científico
-central é responder a uma pergunta simples e falseável:
+central é responder a uma pergunta:
 
 > *A introdução de mecânica quântica (superposição, interferência de fase) no
 > processo de exploração de um grafo produz alguma vantagem mensurável na
@@ -106,27 +106,7 @@ independentes.
   resultados quânticos — o *z-score* da média quântica frente à distribuição
   de controle não indicou vantagem em favor do mecanismo quântico.
 
-### Conclusão científica
 
-Os cinco modelos implementados são unitários e legítimos como simulações de
-quantum walk, mas a evidência empírica deste experimento **não sustenta** a
-hipótese de que interferência de fase produza, por si só, exploração mais
-eficiente de arestas de baixo peso. A parte que efetivamente contribui para
-a qualidade da árvore (o passo guloso de conexão) é puramente clássica e
-idêntica entre todos os métodos — a moeda quântica altera apenas a *ordem*
-de visita, e essa ordem não demonstrou correlação sistemática com o peso das
-arestas nesta instância.
-
-Isso é consistente com a teoria: **não existe algoritmo quântico conhecido**
-que resolva o problema de Árvore Geradora Mínima com garantia de otimalidade
-e vantagem assintótica comprovada usando apenas um *coined quantum walk*. O
-único caminho com ganho quântico real e comprovado na literatura é a
-aplicação da **subrotina de busca de mínimo de Dürr–Høyer** (baseada no
-operador de difusão de Grover) dentro do algoritmo clássico de **Boruvka**,
-que reduz o número de consultas de $O(m)$ para $O(\sqrt{nm})$ por rodada,
-**mantendo optimalidade exata** — uma arquitetura fundamentalmente diferente
-da testada aqui (busca de mínimo assistida por Grover, não amostragem de
-posição via interferência).
 
 ### Limitações explícitas
 - **Szegedy**: a "posição" medida é uma simplificação prática (marginal do
